@@ -29,7 +29,7 @@ The static site is generated into `public/`.
 
 ## Your profile photo (circular, LinkedIn-style)
 
-Drop your photo at **`static/images/profile.png`**, replacing the placeholder.
+Drop your photo at **`assets/images/profile.png`**, replacing the placeholder.
 The theme automatically crops it into a circle, so you do not need to pre-crop it.
 A square image (ideally 400x400 or larger) works best. To adjust the displayed
 size, change `imageWidth` / `imageHeight` under `profileMode` in `hugo.yaml`.
@@ -60,7 +60,7 @@ The post appears automatically at `/posts/` (linked from the "Writing" menu item
 1. **`baseURL`** in `hugo.yaml` — set it to your real domain, e.g. `https://shivamtiwari.com/`.
 2. **Social links** under `params.socialIcons` and in `content/contact.md` — the
    GitHub and X URLs are placeholders, swap in your real handles.
-3. **Photo** — replace `static/images/profile.png` (see above).
+3. **Photo** — replace `assets/images/profile.png` (see above).
 
 ## Deploying (free options)
 

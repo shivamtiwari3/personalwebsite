@@ -1,13 +1,23 @@
 {{- define "main" }}
 
 {{- $img := site.Params.profileMode.imageUrl | default "images/profile.png" }}
+{{- $src := $img | strings.TrimPrefix "/" }}
+{{- $res := resources.Get $src }}
+{{- $url := $img | relURL }}
+{{- with $res }}
+  {{- $processed := . }}
+  {{- if in (slice "jpg" "jpeg" "png" "webp" "gif" "tif" "bmp") $processed.MediaType.SubType }}
+    {{- $processed = .Resize "400x400" }}
+  {{- end }}
+  {{- $url = ($processed | fingerprint).RelPermalink }}
+{{- end }}
 
 <section class="hero">
   <div class="hero-glow" aria-hidden="true"></div>
   <div class="hero-inner">
     <div class="hero-photo">
       <span class="hero-photo-ring" aria-hidden="true"></span>
-      <img src="{{ $img | relURL }}" alt="Shivam Tiwari" width="180" height="180" draggable="false" />
+      <img src="{{ $url }}" alt="Shivam Tiwari" width="180" height="180" draggable="false" />
     </div>
     <div class="hero-text">
       <p class="hero-eyebrow">AI Product Leader · Abu Dhabi</p>
