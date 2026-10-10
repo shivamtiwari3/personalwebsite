@@ -31,7 +31,7 @@ params:
   author: "Shivam Tiwari"
 
   DateFormat: "January 2, 2006"
-  defaultTheme: auto
+  defaultTheme: dark
   disableThemeToggle: false
 
   ShowReadingTime: true
