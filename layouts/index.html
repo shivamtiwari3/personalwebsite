@@ -38,70 +38,117 @@
   </div>
 </section>
 
-<section class="statement">
+<section class="statement reveal">
   <p>The gap between a demo and production is where most <span class="statement-em">agent projects die.</span></p>
 </section>
 
-<section class="stats">
+<section class="stats reveal">
   <div class="stat"><span class="stat-num">200K+</span><span class="stat-label">users reached by Bugzy</span></div>
   <div class="stat"><span class="stat-num">65%</span><span class="stat-label">support tickets auto-resolved</span></div>
   <div class="stat"><span class="stat-num">2.5x</span><span class="stat-label">conversion uplift at Lenskart</span></div>
   <div class="stat"><span class="stat-num">1,200+</span><span class="stat-label">institutions on Apli.ai</span></div>
 </section>
 
-<section class="home-section">
+<section class="home-section reveal">
   <div class="section-head">
-    <h2>Selected work</h2>
+    <div class="section-head-text">
+      <span class="section-eyebrow">01 — Selected work</span>
+      <h2>Things I've shipped</h2>
+    </div>
     <a class="section-link" href="{{ "projects/" | relURL }}">All projects →</a>
   </div>
   <div class="cards">
-    <article class="card">
-      <div class="card-tag">Agentic AI</div>
+    <a class="card" href="{{ "projects/" | relURL }}">
+      <div class="card-top"><span class="card-tag">Agentic AI</span><span class="card-index">01</span></div>
       <h3>Bugzy</h3>
       <p>WhatsApp AI gut-health coach with RAG and multi-turn memory. 200K+ users in 6 months.</p>
-    </article>
-    <article class="card">
-      <div class="card-tag">Customer Experience</div>
+      <span class="card-arrow">→</span>
+    </a>
+    <a class="card" href="{{ "projects/" | relURL }}">
+      <div class="card-top"><span class="card-tag">Customer Experience</span><span class="card-index">02</span></div>
       <h3>Goodsy</h3>
       <p>Multi-step agent with tool-use and human-in-the-loop. Resolves 65% of 24K monthly tickets.</p>
-    </article>
-    <article class="card">
-      <div class="card-tag">Computer Vision</div>
+      <span class="card-arrow">→</span>
+    </a>
+    <a class="card" href="{{ "projects/" | relURL }}">
+      <div class="card-top"><span class="card-tag">Computer Vision</span><span class="card-index">03</span></div>
       <h3>Face Shape AI</h3>
       <p>GPT-4 eyewear recommendation engine at Lenskart. Lifted conversion from 3% to 7.5%.</p>
-    </article>
-    <article class="card">
-      <div class="card-tag">Founder</div>
+      <span class="card-arrow">→</span>
+    </a>
+    <a class="card" href="{{ "projects/" | relURL }}">
+      <div class="card-top"><span class="card-tag">Founder</span><span class="card-index">04</span></div>
       <h3>Apli.ai</h3>
       <p>NLP job-matching platform scaled to 1,200+ institutions. Acquired by Edulab.</p>
-    </article>
+      <span class="card-arrow">→</span>
+    </a>
+  </div>
+</section>
+
+<section class="home-section reveal">
+  <div class="section-head">
+    <div class="section-head-text">
+      <span class="section-eyebrow">02 — Experience</span>
+      <h2>Where I've built</h2>
+    </div>
+    <a class="section-link" href="{{ "experience/" | relURL }}">Full résumé →</a>
+  </div>
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-when">2025 – Now</div>
+      <div class="tl-body">
+        <h3>Head of Product &amp; AI <span>· The Good Bug</span></h3>
+        <p>Scaled Bugzy to 200K+ users and built the AI/Product org from 0 to 1.</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-when">2023 – 2025</div>
+      <div class="tl-body">
+        <h3>Senior AI-Product Manager <span>· Lenskart</span></h3>
+        <p>Shipped the Face Shape AI recommendation engine and a $8B-IPO company's flagship AI features.</p>
+      </div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-when">2019 – 2022</div>
+      <div class="tl-body">
+        <h3>Cofounder &amp; CEO <span>· Apli.ai (acquired)</span></h3>
+        <p>Built and exited an NLP hiring platform with 1,200+ institutions and 6.5L+ candidates.</p>
+      </div>
+    </div>
   </div>
 </section>
 
 {{- $posts := first 3 (where site.RegularPages "Type" "in" site.Params.mainSections) }}
 {{- with $posts }}
-<section class="home-section">
+<section class="home-section reveal">
   <div class="section-head">
-    <h2>Writing</h2>
+    <div class="section-head-text">
+      <span class="section-eyebrow">03 — Writing</span>
+      <h2>Notes on AI products</h2>
+    </div>
     <a class="section-link" href="{{ "posts/" | relURL }}">All posts →</a>
   </div>
   <div class="post-list">
-    {{- range . }}
-    <a class="post-row" href="{{ .RelPermalink }}">
+    {{- range $i, $p := . }}
+    <a class="post-row" href="{{ $p.RelPermalink }}">
+      <span class="post-index">0{{ add $i 1 }}</span>
       <div class="post-row-main">
-        <h3>{{ .Title }}</h3>
-        <p>{{ .Summary | plainify | htmlUnescape | truncate 140 }}</p>
+        <h3>{{ $p.Title }}</h3>
+        <p>{{ $p.Summary | plainify | htmlUnescape | truncate 140 }}</p>
       </div>
-      <time>{{ .Date.Format "Jan 2, 2006" }}</time>
+      <time>{{ $p.Date.Format "Jan 2, 2006" }}</time>
     </a>
     {{- end }}
   </div>
 </section>
 {{- end }}
 
-<section class="home-section">
+<section class="home-section reveal">
   <div class="section-head">
-    <h2>Research, speaking &amp; open source</h2>
+    <div class="section-head-text">
+      <span class="section-eyebrow">04 — Research &amp; teaching</span>
+      <h2>Speaking, teaching &amp; open source</h2>
+    </div>
     <a class="section-link" href="{{ "research/" | relURL }}">More →</a>
   </div>
   <div class="pill-row">
@@ -110,10 +157,27 @@
     <span class="pill">Masters' Union</span>
     <span class="pill">Mesa School of Business</span>
     <span class="pill">Open source · Ollama, LangChain, SWE-Agent</span>
+    <span class="pill">500K+ stars total</span>
   </div>
 </section>
 
-<section class="cta">
+<section class="now reveal">
+  <div class="now-grid">
+    <div class="now-col">
+      <span class="section-eyebrow">Now</span>
+      <h2>What I'm focused on</h2>
+    </div>
+    <ul class="now-list">
+      <li>Leading Product &amp; AI at The Good Bug</li>
+      <li>Building AI products and consulting through Nexhumans</li>
+      <li>Side projects: CallHome, Sparq and a macOS workflow agent</li>
+      <li>Teaching AI product at Google for Startups and IIT Bombay</li>
+      <li>Writing about agentic AI, evals and AI product strategy</li>
+    </ul>
+  </div>
+</section>
+
+<section class="cta reveal">
   <h2>Let's build something with agents.</h2>
   <p>Happy to talk about agentic AI, evals, AI product strategy, or founder stuff. The fastest way to reach me is LinkedIn.</p>
   <a class="btn btn-primary" href="https://www.linkedin.com/in/shivamtiwariin/" target="_blank" rel="noopener">Connect on LinkedIn</a>
