@@ -23,6 +23,25 @@ body.home .main {
     max-width: calc(1080px + var(--gap) * 2);
 }
 
+/* ---------- Header signature logo ---------- */
+.logo a img.signature-logo,
+.logo a .signature-logo {
+    height: 44px;
+    width: auto;
+    border-radius: 0;
+    display: block;
+}
+
+[data-theme="dark"] .logo .signature-logo {
+    filter: invert(1);
+}
+
+@media (max-width: 500px) {
+    .logo a .signature-logo {
+        height: 34px;
+    }
+}
+
 /* ---------- Hero ---------- */
 .hero {
     position: relative;
