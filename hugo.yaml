@@ -52,9 +52,16 @@ params:
 
   assets:
     disableHLJS: true
-    favicon: "/images/favicon.svg"
-    favicon16x16: "/images/favicon.svg"
-    favicon32x32: "/images/favicon.svg"
+    favicon: "images/favicon.ico"
+    favicon16x16: "images/favicon-16x16.png"
+    favicon32x32: "images/favicon-32x32.png"
+    apple_touch_icon: "images/favicon-180x180.png"
+    safari_pinned_tab: "images/favicon.svg"
+    theme_color: "#0a0a0d"
+
+  # Site-wide social share image (og:image / twitter:image)
+  images:
+    - "images/og.png"
 
   profileMode:
     enabled: true
