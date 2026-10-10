@@ -1,5 +1,7 @@
 # Shivam Tiwari — Personal Website
 
+**Live:** https://shivamtiwari3.github.io/personalwebsite/
+
 A personal website built with [Hugo](https://gohugo.io/) and the
 [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme, in the spirit of
 [pulkitverma.net](https://pulkitverma.net/) and
