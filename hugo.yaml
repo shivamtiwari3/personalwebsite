@@ -1,0 +1,133 @@
+baseURL: "https://shivamtiwari3.github.io/personalwebsite/"
+languageCode: "en-us"
+title: "Shivam Tiwari"
+theme: "PaperMod"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+mainsections: ["posts"]
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: "Shivam Tiwari"
+  description: "AI Product leader shipping agentic AI and conversational systems at consumer scale. Ex-Lenskart, Founder of Apli.ai (acquired)."
+  keywords:
+    - Shivam Tiwari
+    - AI Product Manager
+    - Agentic AI
+    - LLM
+    - Product Management
+    - Abu Dhabi
+    - Lenskart
+    - The Good Bug
+  author: "Shivam Tiwari"
+
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: false
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+
+  assets:
+    disableHLJS: true
+    favicon: "/images/favicon.svg"
+    favicon16x16: "/images/favicon.svg"
+    favicon32x32: "/images/favicon.svg"
+
+  profileMode:
+    enabled: true
+    title: "Shivam Tiwari"
+    subtitle: "Head of Product & AI · Building agentic AI for consumer health · Ex-Lenskart · Founder @ Apli (acquired) · Google AI Instructor"
+    imageUrl: "/images/profile.png"
+    imageWidth: 180
+    imageHeight: 180
+    imageTitle: "Shivam Tiwari"
+    buttons:
+      - name: About
+        url: /about/
+      - name: Experience
+        url: /experience/
+      - name: Projects
+        url: /projects/
+      - name: Writing
+        url: /posts/
+      - name: Speaking
+        url: /speaking/
+      - name: Contact
+        url: /contact/
+
+  socialIcons:
+    - name: linkedin
+      url: "https://www.linkedin.com/in/shivamtiwariin/"
+    - name: github
+      url: "https://github.com/shivamtiwari"
+    - name: x
+      url: "https://x.com/shivamtiwari"
+    - name: email
+      url: "mailto:iitb.shivam@gmail.com"
+
+  label:
+    text: "Shivam Tiwari"
+    icon: ""
+    iconHeight: 35
+
+  editPost:
+    disabled: true
+
+menu:
+  main:
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 10
+    - identifier: experience
+      name: Experience
+      url: /experience/
+      weight: 20
+    - identifier: projects
+      name: Projects
+      url: /projects/
+      weight: 30
+    - identifier: writing
+      name: Writing
+      url: /posts/
+      weight: 40
+    - identifier: speaking
+      name: Speaking
+      url: /speaking/
+      weight: 50
+    - identifier: contact
+      name: Contact
+      url: /contact/
+      weight: 60
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+pagination:
+  pagerSize: 10

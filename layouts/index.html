@@ -1,0 +1,107 @@
+{{- define "main" }}
+
+{{- $img := site.Params.profileMode.imageUrl | default "images/profile.png" }}
+
+<section class="hero">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-photo">
+      <span class="hero-photo-ring" aria-hidden="true"></span>
+      <img src="{{ $img | relURL }}" alt="Shivam Tiwari" width="180" height="180" draggable="false" />
+    </div>
+    <div class="hero-text">
+      <p class="hero-eyebrow">AI Product Leader · Abu Dhabi</p>
+      <h1 class="hero-title">Shivam Tiwari</h1>
+      <p class="hero-sub">
+        I build <strong>agentic AI</strong> for consumer scale. Head of Product &amp; AI at The Good Bug,
+        ex-Lenskart, founder of Apli.ai (acquired), and a Google for Startups instructor.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="{{ "contact/" | relURL }}">Get in touch</a>
+        <a class="btn btn-ghost" href="{{ "projects/" | relURL }}">View my work</a>
+      </div>
+      <div class="hero-socials">
+        {{- partial "social_icons.html" (dict "align" "left") -}}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="stat"><span class="stat-num">200K+</span><span class="stat-label">users reached by Bugzy</span></div>
+  <div class="stat"><span class="stat-num">65%</span><span class="stat-label">support tickets auto-resolved</span></div>
+  <div class="stat"><span class="stat-num">2.5x</span><span class="stat-label">conversion uplift at Lenskart</span></div>
+  <div class="stat"><span class="stat-num">1,200+</span><span class="stat-label">institutions on Apli.ai</span></div>
+</section>
+
+<section class="home-section">
+  <div class="section-head">
+    <h2>Selected work</h2>
+    <a class="section-link" href="{{ "projects/" | relURL }}">All projects →</a>
+  </div>
+  <div class="cards">
+    <article class="card">
+      <div class="card-tag">Agentic AI</div>
+      <h3>Bugzy</h3>
+      <p>WhatsApp AI gut-health coach with RAG and multi-turn memory. 200K+ users in 6 months.</p>
+    </article>
+    <article class="card">
+      <div class="card-tag">Customer Experience</div>
+      <h3>Goodsy</h3>
+      <p>Multi-step agent with tool-use and human-in-the-loop. Resolves 65% of 24K monthly tickets.</p>
+    </article>
+    <article class="card">
+      <div class="card-tag">Computer Vision</div>
+      <h3>Face Shape AI</h3>
+      <p>GPT-4 eyewear recommendation engine at Lenskart. Lifted conversion from 3% to 7.5%.</p>
+    </article>
+    <article class="card">
+      <div class="card-tag">Founder</div>
+      <h3>Apli.ai</h3>
+      <p>NLP job-matching platform scaled to 1,200+ institutions. Acquired by Edulab.</p>
+    </article>
+  </div>
+</section>
+
+{{- $posts := first 3 (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+{{- with $posts }}
+<section class="home-section">
+  <div class="section-head">
+    <h2>Writing</h2>
+    <a class="section-link" href="{{ "posts/" | relURL }}">All posts →</a>
+  </div>
+  <div class="post-list">
+    {{- range . }}
+    <a class="post-row" href="{{ .RelPermalink }}">
+      <div class="post-row-main">
+        <h3>{{ .Title }}</h3>
+        <p>{{ .Summary | plainify | htmlUnescape | truncate 140 }}</p>
+      </div>
+      <time>{{ .Date.Format "Jan 2, 2006" }}</time>
+    </a>
+    {{- end }}
+  </div>
+</section>
+{{- end }}
+
+<section class="home-section">
+  <div class="section-head">
+    <h2>Teaching &amp; open source</h2>
+    <a class="section-link" href="{{ "speaking/" | relURL }}">More →</a>
+  </div>
+  <div class="pill-row">
+    <span class="pill">Google for Startups · Lead Instructor</span>
+    <span class="pill">IIT Bombay · Visiting Faculty</span>
+    <span class="pill">Masters' Union</span>
+    <span class="pill">Mesa School of Business</span>
+    <span class="pill">Ollama · LangChain · SWE-Agent PRs</span>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Let's build something with agents.</h2>
+  <p>Happy to talk about agentic AI, evals, AI product strategy, or founder stuff.</p>
+  <a class="btn btn-primary" href="{{ "contact/" | relURL }}">Contact me</a>
+</section>
+
+{{- end }}
