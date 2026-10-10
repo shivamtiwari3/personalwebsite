@@ -5,10 +5,14 @@ hidemeta: true
 ShowToc: false
 ---
 
+AI Product leader with 7 years shipping agentic AI, conversational AI and NLP systems at consumer scale. Founder-to-exit, full-stack AI ownership across model selection, evals, inference cost and P&L.
+
+---
+
 ## Head of Product & AI
 **The Good Bug** · Series B, INR 100 CR · Reporting to the founder · Mar 2025 – Present
 
-- Defined and shipped **Bugzy**, an agentic AI Gut Coach on WhatsApp with RAG, multi-turn memory and hallucination guardrails; scaled to **200K+ users** in 6 months with 1.5x retention uplift.
+- Defined and shipped **Bugzy**, an agentic AI Gut Coach on WhatsApp with RAG, multi-turn memory and hallucination guardrails; scaled to **200K+ users** in 6 months with a 1.5x retention uplift.
 - Architected **Goodsy** as a multi-step AI agent with tool-use, memory and HITL escalation; autonomously resolves **65% of 24,000 monthly support tickets**, saving INR 3CR+ in annual support opex.
 - Owned model selection and migration strategy across GPT-4o, Llama 3.2 and Mistral using RAGAS faithfulness and answer-relevancy evals; selected Llama 3.2 11B for a **30% inference cost reduction** at 85%+ quality parity.
 - Built the AI and Product org 0-to-1; hired a **10-member team in 6 months** across Product, Design and Engineering; owned the full annual budget spanning compensation, LLM infrastructure and vendor tools.
@@ -17,7 +21,7 @@ ShowToc: false
 ## Senior AI-Product Manager
 **Lenskart** · NSE/BSE Listed, $8B IPO 2025 · Feb 2023 – Feb 2025
 
-### Lead Product Manager, John Jacobs (Lenskart) · Reporting to the CEO · Feb 2023 – Mar 2024
+**Lead Product Manager, John Jacobs (Lenskart)** · Reporting to the CEO · Feb 2023 – Mar 2024
 
 - Shipped a GPT-4 powered eyewear recommendation engine using **face-shape detection** and prompt chaining, evaluated across 500+ test cases before launch, lifting conversion from 3% to 7.5% (**2.5x uplift**) in 3 months.
 - Originated the AI stylist concept behind **Lenskart B**, built the business case projecting ₹25CR revenue in 7 months, and designed a lifestyle-based frame assistant that delivered 8x conversion uplift in prototype testing.

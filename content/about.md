@@ -9,21 +9,28 @@ I am an AI Product leader with 7 years shipping agentic AI, conversational AI an
 
 My career started as a founder. I co-founded **Apli.ai**, which grew to 1,200+ institutions and 6.5L+ candidates before being acquired by Edulab. From there I went to **Lenskart**, where I shipped a GPT-4 powered eyewear recommendation engine and the Face Shape AI that lifted conversion 2.5x. That work taught me that the hardest part of AI shipping is rarely the model. It is deciding where the model should stop and a human should start.
 
-## What I do
+## How I think about AI products
 
-I build agentic AI systems end to end. That means owning model selection, evals, inference cost, and the P&L that sits behind all of it. I have run migrations across GPT-4o, Llama 3.2 and Mistral using RAGAS faithfulness and answer-relevancy evals, and I treat model choice as a margin decision, not just an engineering one.
+The demo is easy now. The production version is a different sport, and the gap between the two is where most agent projects die.
 
-The pattern I keep seeing: the gap between a demo and production is where most agent projects die. I have survived it twice by running evals religiously and designing escalation paths before launch, not after the first angry customer.
+- **Evals are infrastructure, not a chore.** Faithfulness and relevancy harnesses gate every model swap. If you have not been running them before the change, you are guessing.
+- **Model choice is a margin decision.** Cost per resolution sits in the same spreadsheet as latency and headcount saved. Quality parity at lower cost is a product win.
+- **Design the autonomy boundary first.** Decide where the AI stops and a human starts before launch, not after the first angry customer.
+- **Domain experts own quality.** The team closest to the problem makes the best eval authors. Give them ownership, not a threat.
+
+## What I do day to day
+
+Full stack AI ownership: model selection, retrieval and memory architecture, eval pipelines, inference cost, and the P&L behind all of it. I have run migrations across GPT-4o, Llama 3.2 and Mistral, and I build the teams and roadmaps that ship them.
 
 ## Beyond the day job
 
 - Lead Instructor at **Google for Startups**, teaching AI product and prototyping to early-stage founders across India.
 - Visiting Faculty and speaker at **IIT Bombay**, **Mesa School of Business**, **Masters' Union** and 20+ events on Gen AI and Product.
 - Open source contributor with merged PRs in repos like Ollama, LangChain, SWE-Agent, Deno and Jaeger.
-- Writing about agentic AI, evals and AI product strategy for an audience of ~24K LinkedIn followers, mostly D2C founders and PMs.
+- Writing about agentic AI, evals and AI product strategy for ~24K LinkedIn followers, mostly D2C founders and PMs.
 
 ## Currently
 
 Based in Abu Dhabi. Building AI products, consulting through **Nexhumans**, and tinkering on side projects like an AI voice companion for elderly parents and a macOS workflow agent.
 
-Reach me: [iitb.shivam@gmail.com](mailto:iitb.shivam@gmail.com) · [LinkedIn](https://www.linkedin.com/in/shivamtiwariin/)
+The fastest way to reach me is [LinkedIn](https://www.linkedin.com/in/shivamtiwariin/), or email at [iitb.shivam@gmail.com](mailto:iitb.shivam@gmail.com).

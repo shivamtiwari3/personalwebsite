@@ -73,18 +73,18 @@ params:
         url: /projects/
       - name: Writing
         url: /posts/
-      - name: Speaking
-        url: /speaking/
-      - name: Contact
-        url: /contact/
+      - name: Research & Speaking
+        url: /research/
 
   socialIcons:
     - name: linkedin
       url: "https://www.linkedin.com/in/shivamtiwariin/"
     - name: github
-      url: "https://github.com/shivamtiwari"
+      url: "https://github.com/shivamtiwari3"
     - name: x
-      url: "https://x.com/shivamtiwari"
+      url: "https://x.com/shivamtiwariin"
+    - name: googlescholar
+      url: "https://scholar.google.com/citations?user=SHIVAM_SCHOLAR_ID"
     - name: email
       url: "mailto:iitb.shivam@gmail.com"
 
@@ -110,18 +110,14 @@ menu:
       name: Projects
       url: /projects/
       weight: 30
+    - identifier: research
+      name: Research & Speaking
+      url: /research/
+      weight: 40
     - identifier: writing
       name: Writing
       url: /posts/
-      weight: 40
-    - identifier: speaking
-      name: Speaking
-      url: /speaking/
       weight: 50
-    - identifier: contact
-      name: Contact
-      url: /contact/
-      weight: 60
 
 outputs:
   home:

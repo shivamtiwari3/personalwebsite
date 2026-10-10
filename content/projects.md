@@ -49,4 +49,4 @@ An AI-native post-purchase operations agency for Indian D2C brands, priced on ou
 
 ---
 
-Interested in any of these or want to work together? [Get in touch](/contact/).
+Interested in any of these or want to work together? [Reach me on LinkedIn](https://www.linkedin.com/in/shivamtiwariin/).

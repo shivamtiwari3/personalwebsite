@@ -42,8 +42,7 @@ size, change `imageWidth` / `imageHeight` under `profileMode` in `hugo.yaml`.
 | About             | `content/about.md`          |
 | Experience        | `content/experience.md`     |
 | Projects          | `content/projects.md`       |
-| Speaking / OSS    | `content/speaking.md`       |
-| Contact           | `content/contact.md`        |
+| Research & Speaking | `content/research.md`     |
 | Blog posts        | `content/posts/*.md`        |
 
 Add a new blog post:
@@ -58,8 +57,8 @@ The post appears automatically at `/posts/` (linked from the "Writing" menu item
 ## Before you publish — update these
 
 1. **`baseURL`** in `hugo.yaml` — set it to your real domain, e.g. `https://shivamtiwari.com/`.
-2. **Social links** under `params.socialIcons` and in `content/contact.md` — the
-   GitHub and X URLs are placeholders, swap in your real handles.
+2. **Social links** under `params.socialIcons` — including the Google Scholar URL,
+   which currently has a placeholder `SHIVAM_SCHOLAR_ID`.
 3. **Photo** — replace `assets/images/profile.png` (see above).
 
 ## Deploying (free options)
