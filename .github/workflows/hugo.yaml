@@ -41,7 +41,10 @@ jobs:
           sudo dpkg -i hugo.deb
 
       - name: Build
-        run: hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+        # baseURL is set in hugo.yaml to the custom domain (https://www.shivamtiwari.si/).
+        # Do not override it here: configure-pages can report the github.io project URL,
+        # which emits asset paths under /personalwebsite/ and breaks the custom domain.
+        run: hugo --minify
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

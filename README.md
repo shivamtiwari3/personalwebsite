@@ -1,6 +1,12 @@
 # Shivam Tiwari — Personal Website
 
-**Live:** https://shivamtiwari3.github.io/personalwebsite/
+**Live:** https://www.shivamtiwari.si/
+
+> Served on a custom domain via GitHub Pages. `baseURL` in `hugo.yaml` must stay
+> set to `https://www.shivamtiwari.si/` (with the trailing slash) and the same
+> domain is committed in `static/CNAME`. If `baseURL` ever points at the old
+> `.../personalwebsite/` project URL, asset paths resolve under that subpath and
+> the live site renders unstyled on the custom domain.
 
 A personal website built with [Hugo](https://gohugo.io/) and the
 [PaperMod](https://github.com/adityatelange/hugo-PaperMod) theme, in the spirit of
@@ -18,6 +24,9 @@ hugo server -D
 ```
 
 Then open http://localhost:1313. The site hot-reloads as you edit.
+
+Because `baseURL` is a bare domain (no subpath), `hugo server` serves the site at
+the root of `localhost:1313`, exactly as it is served in production.
 
 ## Build for production
 
@@ -54,11 +63,12 @@ hugo new content posts/my-new-post.md
 Edit `date`, `title`, `summary` and `tags` in the front matter, then write in Markdown.
 The post appears automatically at `/posts/` (linked from the "Writing" menu item).
 
-## Before you publish — update these
+## Before you publish — check these
 
-1. **`baseURL`** in `hugo.yaml` — set it to your real domain, e.g. `https://shivamtiwari.com/`.
+1. **`baseURL`** in `hugo.yaml` and **`static/CNAME`** — both should read
+   `www.shivamtiwari.si`. They must agree, or the deployed site breaks.
 2. **Social links** under `params.socialIcons` — including the Google Scholar URL,
-   which currently has a placeholder `SHIVAM_SCHOLAR_ID`.
+   which still has a placeholder `SHIVAM_SCHOLAR_ID` (also in `content/research.md`).
 3. **Photo** — replace `assets/images/profile.png` (see above).
 
 ## Deploying (free options)
