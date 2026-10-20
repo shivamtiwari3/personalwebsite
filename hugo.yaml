@@ -91,7 +91,7 @@ params:
     - name: x
       url: "https://x.com/shivamtiwariin"
     - name: googlescholar
-      url: "https://scholar.google.com/citations?user=SHIVAM_SCHOLAR_ID"
+      url: "https://scholar.google.com/citations?user=b-OtBPkAAAAJ"
     - name: email
       url: "mailto:iitb.shivam@gmail.com"
 
@@ -99,7 +99,7 @@ params:
     text: "Shivam Tiwari"
     icon: ""
     iconHeight: 35
-    signature: "images/signature.png"
+    signature: "images/signature.svg"
     signatureHeight: 44
 
   editPost:
