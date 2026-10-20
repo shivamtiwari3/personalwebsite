@@ -99,7 +99,7 @@ params:
     text: "Shivam Tiwari"
     icon: ""
     iconHeight: 35
-    signature: "images/signature.svg"
+    signature: "images/signature.png"
     signatureHeight: 44
 
   editPost:
