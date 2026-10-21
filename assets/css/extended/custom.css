@@ -48,9 +48,8 @@ body.home .main {
     display: block;
 }
 
-[data-theme="dark"] .logo .signature-logo {
-    filter: invert(1);
-}
+/* Signature is a fixed accent-gradient mark, so it is intentionally NOT
+   inverted on the dark theme — it reads on both light and dark. */
 
 @media (max-width: 500px) {
     .logo a .signature-logo {
